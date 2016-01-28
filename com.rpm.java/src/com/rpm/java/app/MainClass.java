@@ -8,5 +8,8 @@ public class MainClass {
 		System.out.println(classA);
 		System.out.println(classA.hashCode());
 		System.out.println(classA.getClass());
+		
+		
+		new NewClass();
 	}
 }
