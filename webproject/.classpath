@@ -15,5 +15,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Users/mn080315/Desktop/img/javax.servlet-api-2.5.MR2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mn080315/Desktop/img/servlet-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mn080315/Desktop/spdf_2.9.2-0.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mn080315/Desktop/spdf_2.10-1.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

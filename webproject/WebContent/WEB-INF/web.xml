@@ -6,7 +6,7 @@
 	<display-name>webproject</display-name>
 	<welcome-file-list>
 		<!-- <welcome-file>login.html</welcome-file> -->
-		<welcome-file>input.html</welcome-file>
+		<welcome-file>Basci.html</welcome-file>
 	</welcome-file-list>
 	<servlet>
 		<servlet-name>Login</servlet-name>
@@ -24,11 +24,9 @@
 		<servlet-name>Home</servlet-name>
 		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
 		<servlet-name>input</servlet-name>
 		<servlet-class>com.wweb.app.Input</servlet-class>
-
 		<init-param>
 			<param-name>name</param-name>
 			<param-value>manikanta</param-value>
@@ -50,7 +48,22 @@
 		<servlet-name>input</servlet-name>
 		<url-pattern>/input</url-pattern>
 	</servlet-mapping>
-
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>com.wweb.app.Cookies</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/s1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>com.wweb.app.Cookies2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/s2</url-pattern>
+	</servlet-mapping>
 	<context-param>
 		<param-name>name</param-name>
 		<param-value>manikanta</param-value>
@@ -63,4 +76,45 @@
 		<param-name>c</param-name>
 		<param-value>c</param-value>
 	</context-param>
+	<servlet>
+		<servlet-name>ss1</servlet-name>
+		<servlet-class>com.wweb.app.Session</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ss1</servlet-name>
+		<url-pattern>/ss1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ss2</servlet-name>
+		<servlet-class>com.wweb.app.Session2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ss2</servlet-name>
+		<url-pattern>/ss2</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<filter-name>f1</filter-name>
+		<filter-class>com.wweb.app.MyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f1</filter-name>
+		<servlet-name>com.wweb.app.SayHi</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>img</servlet-name>
+		<servlet-class>com.wweb.app.DisplayImage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>img</servlet-name>
+		<url-pattern>/img</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Basic</servlet-name>
+		<servlet-class>com.wweb.app.BasicVo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Basic</servlet-name>
+		<url-pattern>/basic</url-pattern>
+	</servlet-mapping>
 </web-app>
